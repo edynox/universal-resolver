@@ -25,6 +25,7 @@ You should then be able to resolve identifiers locally using simple `curl` reque
 	curl -X GET  http://localhost:8080/1.0/identifiers/did:ipid:QmbFuwbp7yFDTMX6t8HGcEiy3iHhfvng89A19naCYGKEBj
 	curl -X GET  http://localhost:8080/1.0/identifiers/did:uport:2ok9oMAM54TeFMfLb3ZX4i9Qu6x5pcPA7nV
 	curl -X GET  http://localhost:8080/1.0/identifiers/did:stack:v0:16EMaNw3pkn3v6f2BgnSSs53zAKH4Q8YJg-0
+	curl -X GET  http://localhost:8080/1.0/identifiers/did:vetri:0x3b0BC51Ab9De1e5B7B6E34E5b960285805C4173a
 
 Also see the [Examples](https://github.com/decentralized-identity/universal-resolver/tree/master/implementations/java/examples/src/main/java/uniresolver/examples/).
 
@@ -57,10 +58,10 @@ Dependency:
 	uniResolver.getDriver(DidSovDriver.class).setPoolConfigName("live");
 	uniResolver.getDriver(DidSovDriver.class).setPoolGenesisTxn("live.txn");
 	uniResolver.getDriver(DidBtcrDriver.class).setExtendedBitcoinConnection(BlockcypherAPIExtendedBitcoinConnection.get());
-	
+
 	DDO ddo1 = uniResolver.resolve("did:sov:WRfXPg8dantKVubE3HX8pw");
 	System.out.println(ddo1.serialize());
-	
+
 	DDO ddo2 = uniResolver.resolve("did:btcr:xkrn-xzcr-qqlv-j6sl");
 	System.out.println(ddo2.serialize());
 
@@ -93,10 +94,10 @@ Dependency:
 
 	ClientUniResolver uniResolver = new ClientUniResolver();
 	uniResolver.setResolverUri("https://uniresolver.danubetech.com/1.0/identifiers/");
-	
+
 	DDO ddo1 = uniResolver.resolve("did:sov:WRfXPg8dantKVubE3HX8pw");
 	System.out.println(ddo1.serialize());
-	
+
 	DDO ddo2 = uniResolver.resolve("did:btcr:xkrn-xzcr-qqlv-j6sl");
 	System.out.println(ddo2.serialize());
 
@@ -109,7 +110,7 @@ Dependency:
 
 Drivers can be invoked either locally as a Maven dependency, or they can be invoked via a REST GET call to a Docker container.
 
-Drivers for the **did:sov**, **did:btcr**, and **did:stack** methods are included in this repository. A driver for the **did:uport** method is available at https://github.com/uport-project/uport-did-driver.
+Drivers for the **did:sov**, **did:btcr**, and **did:stack** methods are included in this repository. A driver for the **did:uport** method is available at https://github.com/uport-project/uport-did-driver, the driver for **did:vetri** is available at https://github.com/vetri-global/vetri-did-driver
 
 ### About
 

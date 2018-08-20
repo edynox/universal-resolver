@@ -23,6 +23,7 @@ The following implementations are available for use:
 | did-uport | [1.1.0](https://github.com/uport-project/uport-did-driver) | [0.7](https://w3c-ccg.github.io/did-spec/) | [1.0](https://docs.google.com/document/d/1vS6UBUDwxYR8tLTNo4HUhGe2qb9Q95QLiJTt9NkwZ8M/) | [uport/uni-resolver-driver-did-uport](https://hub.docker.com/r/uport/uni-resolver-driver-did-uport/)
 | did-v1 |  | [0.7](https://w3c-ccg.github.io/did-spec/) | [1.0](https://w3c-ccg.github.io/didm-veres-one/) |
 | did-ipid |  | [0.7](https://w3c-ccg.github.io/did-spec/) | [0.1](https://github.com/jonnycrunch/ipid) |
+| did-vetri | [0.1](https://github.com/vetri-global/vetri-did-driver) | [1.0](https://w3c-ccg.github.io/didm-veres-one/) | | [vetriglobal/did-driver](https://hub.docker.com/r/vetriglobal/did-driver/)
 
 ## More Information
 

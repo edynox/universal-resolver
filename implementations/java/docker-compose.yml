@@ -31,6 +31,10 @@ services:
     image: uport/uni-resolver-driver-did-uport
     ports:
       - "8083:8081"
+  driver-did-vetri:
+    image: edynox/vetri-did-driver
+    ports:
+      - "8087:8087"
   driver-did-erc725:
     build:
       context: .
